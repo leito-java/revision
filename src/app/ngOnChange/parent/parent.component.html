@@ -1,2 +1,10 @@
 <h1>Je suis le parent</h1>
-<app-enfant [valeurRecue]="valeurEnvoyee"></app-enfant>
+<p> sans changement de réference</p>
+<button (click)="changerNomSansNouvelleReference()">Modifier le nom</button>
+
+<p> sans changement de réference</p>
+<button (click)="changerNomAvecNouvelleReference()">Modifier le nom avec un changement de reference</button>
+<app-enfant [utilisateur]="utilisateur"></app-enfant>
+
+
+<!-- <app-enfant [valeurRecue]="valeurEnvoyee"></app-enfant> -->
