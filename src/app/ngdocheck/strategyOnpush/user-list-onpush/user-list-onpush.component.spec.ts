@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EnfantComponent } from './enfant.component';
+import { UserListOnpushComponent } from './user-list-onpush.component';
 
-describe('EnfantComponent', () => {
-  let component: EnfantComponent;
-  let fixture: ComponentFixture<EnfantComponent>;
+describe('UserListOnpushComponent', () => {
+  let component: UserListOnpushComponent;
+  let fixture: ComponentFixture<UserListOnpushComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [EnfantComponent],
+      imports: [UserListOnpushComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(EnfantComponent);
+    fixture = TestBed.createComponent(UserListOnpushComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

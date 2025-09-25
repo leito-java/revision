@@ -28,6 +28,10 @@ module.exports = {
   // ✅ Ajoute automatiquement des parenthèses autour des arguments des fonctions fléchées
   // Exemple : `(x) => x + 1` même s’il y a un seul argument
   arrowParens: 'always',
+  "endOfLine": "lf",
+  "singleQuote": true,
+  "semi": true,
+  "printWidth": 100,
 
   // ✅ Force l’utilisation de l’extension `.ts` dans les imports (optionnel, selon ton projet)
   // utile si tu bosses dans des monorepo ou avec ES modules stricts

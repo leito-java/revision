@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ParentComponent } from './parent.component';
+import { ParentComponent } from './parentOnchange.component';
 
 describe('ParentComponent', () => {
   let component: ParentComponent;
@@ -8,9 +8,8 @@ describe('ParentComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ParentComponent]
-    })
-    .compileComponents();
+      imports: [ParentComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(ParentComponent);
     component = fixture.componentInstance;
