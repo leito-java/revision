@@ -1,0 +1,12 @@
+<h2>Parent Component (OnPush)</h2>
+
+<p>Counter: {{ counter }}</p>
+<button (click)="increment()">Increment Counter</button>
+<button (click)="addUserNewRef()">Add User (new ref)</button>
+<button (click)="addUserSameRef()">Add User (same ref)</button>
+
+<h3>Default Child</h3>
+<app-user-list-default [users]="users"></app-user-list-default>
+
+<h3>OnPush Child</h3>
+<app-user-list-onpush [users]="users"></app-user-list-onpush>

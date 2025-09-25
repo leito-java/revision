@@ -1,2 +1,11 @@
+<!-- Zone où les composants s'affichent -->
+<!-- <router-outlet></router-outlet> -->
+<nav>
+  <ul>
+    <li><a routerLink="/ngdocheck" routerLinkActive="active">ngDoCheck</a></li>
+    <li><a routerLink="/ngonchanges" routerLinkActive="active">ngOnChanges</a></li>
+  </ul>
+</nav>
 
-<app-parent></app-parent>
+<!-- Le composant correspondant au route s'affiche ici -->
+<router-outlet></router-outlet>

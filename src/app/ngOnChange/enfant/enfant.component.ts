@@ -6,11 +6,11 @@ import { Component, Input, SimpleChanges, OnChanges } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './enfant.component.html',
-  styleUrl: './enfant.component.css'
+  styleUrl: './enfant.component.css',
 })
 export class EnfantComponent implements OnChanges {
   @Input() valeurRecue!: string;
-  @Input() utilisateur!: { nom: string, age: string };
+  @Input() utilisateur!: { nom: string; age: string };
   messageChange = false;
 
   ngOnChanges(changes: SimpleChanges) {

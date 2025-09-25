@@ -2,16 +2,14 @@ import { Component } from '@angular/core';
 import { EnfantComponent } from '../enfant/enfant.component';
 
 @Component({
-  selector: 'app-parent',
+  selector: 'app-parent-onchange',
   imports: [EnfantComponent],
-  templateUrl: './parent.component.html',
-  styleUrl: './parent.component.css'
+  templateUrl: './parentOnchange.component.html',
+  styleUrl: './parentOnchange.component.css',
 })
-export class ParentComponent {
+export class ParentOnchangeComponent {
   valeurEnvoyee = 'Bonjour mon enfants !  ';
-  utilisateur= {nom: 'amine', age: '36'};
-
-
+  utilisateur = { nom: 'amine', age: '36' };
 
   // ngOnInit() {
   //   setTimeout(() => {
@@ -19,12 +17,12 @@ export class ParentComponent {
   //   }, 3000);
   // }
 
-  changerNomSansNouvelleReference(){
+  changerNomSansNouvelleReference() {
     // ⚠️ ngOnChanges ne sera PAS déclenché
 
     this.utilisateur.nom = 'El gorch';
   }
-  changerNomAvecNouvelleReference(){
+  changerNomAvecNouvelleReference() {
     // ✅ ngOnChanges sera déclenché
     this.utilisateur = { ...this.utilisateur, nom: 'El gorch mohamed amine' };
   }
