@@ -1,0 +1,10 @@
+<h2>Parent</h2>
+
+<!-- Cas ContentChild -->
+<app-childngaftercontent>
+  <p #msg>Message projeté par le parent</p>
+</app-childngaftercontent>
+
+<!-- Cas ViewChild -->
+<p #msgParent>Message gardé dans le parent</p>
+<button (click)="changerParent()">Modifier depuis le parent</button>
