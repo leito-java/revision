@@ -1,0 +1,22 @@
+# Toujours normaliser les fichiers texte
+* text=auto
+
+# TypeScript, HTML, CSS, JSON → fins de ligne LF
+*.ts     text eol=lf
+*.html   text eol=lf
+*.css    text eol=lf
+*.json   text eol=lf
+*.md     text eol=lf
+
+# Windows-only scripts → CRLF
+*.bat    text eol=crlf
+*.cmd    text eol=crlf
+
+# Ne jamais toucher aux fichiers binaires
+*.png    binary
+*.jpg    binary
+*.gif    binary
+*.ico    binary
+*.pdf    binary
+*.jar    binary
+*.zip    binary

@@ -1,0 +1,19 @@
+<div style="border:2px solid green; padding:15px; margin:10px;">
+      <h2>👨‍👧 Composant Parent</h2>
+
+      <!-- Étape 1 -->
+      <p *ngIf="initDone">
+        ✅ Étape 1 : Angular a initialisé la vue. 
+        Le parent a pu accéder à l’enfant grâce à <code>ViewChild</code> 
+        et a changé directement son message.
+      </p>
+
+      <!-- Étape 2 -->
+      <button (click)="mettreAJourEnfant()">👆 Cliquer ici pour étape 2</button>
+      <p *ngIf="updateDone">
+        ✅ Étape 2 : En cliquant, le parent appelle une méthode publique de l’enfant, et c'est l’enfant qui se met à jour garce au cycle de vie ngafterviewChecked
+        (<code>changerMessage()</code>) pour mettre à jour son affichage.
+      </p>
+
+      <app-child-component></app-child-component>
+    </div>

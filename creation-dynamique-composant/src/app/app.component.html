@@ -1,0 +1,6 @@
+<h2>Utilisateurs</h2>
+    <ul>
+      <li *ngFor="let u of users">{{ u }}</li>
+    </ul>
+    <button (click)="addUser()">Ajouter</button>
+    <ng-template #slot></ng-template>
